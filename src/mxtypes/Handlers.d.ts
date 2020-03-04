@@ -1,8 +1,6 @@
-
 /******************      Handler      **************/
 
 declare class mxCellHighlight {
-
   /**
    * A helper class to highlight cells.
    */
@@ -55,14 +53,11 @@ declare class mxCellHighlight {
   destroy();
 }
 
-
-
 /**
  * A helper class to process mouse locations and highlight cells.
  * Helper class to highlight cells
  */
 declare class mxCellMarker {
-
   /**
    * Constructs a new cell marker
    * @param graph Reference to the enclosing mxGraph
@@ -223,15 +218,11 @@ declare class mxCellMarker {
    * Destroys the handler and all its resources and DOM nodes.
    */
   destroy(): void;
-
 }
 
-declare class mxConstraintHandler {
-
-}
+declare class mxConstraintHandler {}
 
 declare class mxEdgeHandler {
-
   /** Graph event handler that reconnects edges and modifies control points and the edge label location.
    * Uses <mxTerminalMarker> for finding and highlighting new source and target vertices.  This handler is
    * automatically created in mxGraph.createHandler for each selected edge. */
@@ -534,7 +525,12 @@ declare class mxEdgeHandler {
    * @param {mxCellState} terminalState
    * @param {mxMouseEvent} me
    */
-  updatePreviewState(edge: mxCell, point: mxPoint, terminalState: mxCellState, me: mxMouseEvent): void;
+  updatePreviewState(
+    edge: mxCell,
+    point: mxPoint,
+    terminalState: mxCellState,
+    me: mxMouseEvent
+  ): void;
 
   /**
    * Handles the event by updating the preview.
@@ -585,7 +581,13 @@ declare class mxEdgeHandler {
    * @param {boolean} isClone Boolean indicating if the new connection should be a clone of the old edge
    * @param {mxMouseEvent} me mxMouseEvent that contains the mouse up event
    */
-  connect(edge: mxCell, terminal: mxCell, isSource: boolean, isClone: boolean, me: mxMouseEvent): mxCell;
+  connect(
+    edge: mxCell,
+    terminal: mxCell,
+    isSource: boolean,
+    isClone: boolean,
+    me: mxMouseEvent
+  ): mxCell;
 
   /**
    * Changes the terminal point of the given edge.
@@ -724,7 +726,6 @@ declare class mxSelectionCellsHandler extends mxEventSource {
   getHandler(cell: mxCell);
 
   handlers: mxDictionary;
-
 }
 
 declare class mxVertexHandler {
@@ -775,9 +776,7 @@ declare class mxVertexHandler {
 }
 
 declare class mxRubberband {
-
-  constructor(graph:mxGraph);
+  constructor(graph: mxGraph);
 }
-
 
 /******************      Handler end     **************/

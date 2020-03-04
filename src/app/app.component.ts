@@ -1,12 +1,11 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
-
   @ViewChild('graphContainer') graphContainer: ElementRef;
 
   ngAfterViewInit() {
@@ -25,5 +24,4 @@ export class AppComponent implements AfterViewInit {
       new mxHierarchicalLayout(graph).execute(graph.getDefaultParent());
     }
   }
-
 }

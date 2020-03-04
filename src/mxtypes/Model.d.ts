@@ -1,8 +1,6 @@
-
 /******************      Model         **************/
 
 declare class mxCell {
-
   id: any;
   value;
   geometry;

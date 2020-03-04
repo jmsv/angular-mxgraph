@@ -4,9 +4,7 @@
 /// <reference path="Handlers.d.ts"/>
 /// <reference path="Shape.d.ts"/>
 
-
 declare class mxGraph {
-
   constructor(container: any);
 
   mouseListeners;
@@ -466,5 +464,4 @@ declare class mxGraph {
   fireMouseEvent(evtName, me, sender);
   fireGestureEvent(evt, cell);
   destroy();
-
 }
